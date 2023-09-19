@@ -16,7 +16,7 @@ Powerful, Stable, and Reproducible LLM Alignment
 
 **Step up your LLM alignment with Xwin-LM!**
 
-Xwin-LM aims to develop and open-source alignment technologies for large language models, including supervised fine-tuning (SFT), reward models, reject sampling, reinforcement learning, etc. Our first release, built-upon on the Llama2 base models, ranked **TOP-1** on [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/). Notably, it's **the first to surpass GPT-4** on this benchmark. The project will be continuously updated.
+Xwin-LM aims to develop and open-source alignment technologies for large language models, including supervised fine-tuning (SFT), reward models (RM), reject sampling, reinforcement learning from human feedback (RLHF), etc. Our first release, built-upon on the Llama2 base models, ranked **TOP-1** on [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/). Notably, it's **the first to surpass GPT-4** on this benchmark. The project will be continuously updated.
 
 ## News
 
@@ -88,7 +88,7 @@ A chat between a curious user and an artificial intelligence assistant. The assi
 
 ### HuggingFace Example
 
-```
+```python
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 model = AutoModelForCausalLM.from_pretrained("Xwin-LM/Xwin-LM-7B-V0.1")
@@ -109,7 +109,7 @@ print(output)
 
 ### vllm Example
 Because Xwin-LM is based on Llama2, it also offers support for rapid inference using [vllm](https://github.com/vllm-project/vllm). Please refer to [vllm](https://github.com/vllm-project/vllm) for detailed installation instructions.
-```
+```python
 from vllm import LLM, SamplingParams
 (
     prompt := "A chat between a curious user and an artificial intelligence assistant. "
