@@ -64,7 +64,7 @@ The following table provides a comparison of Xwin-LMs with other LLMs on NLP fou
 
 | Model            | MMLU 5-shot | ARC 25-shot | TruthfulQA 0-shot | HellaSwag 10-shot | Average    |
 |------------------|-------------|-------------|-------------------|-------------------|------------|
-| Text-davinci-003 | 56.9 | 85.2    | 59.3         | 82.2       | 70.9  |
+| Text-davinci-003 | 56.9 | **85.2**    | 59.3         | 82.2       | 70.9  |
 |Vicuna-13b 1.1   | 51.3        | 53.0        | 51.8              | 80.1              | 59.1       |
 |Guanaco 30B   | 57.6        | 63.7        | 50.7              | 85.1              | 64.3       |   
 | WizardLM-7B 1.0      | 42.7        | 51.6        | 44.7              | 77.7              | 54.2       |
@@ -75,7 +75,7 @@ The following table provides a comparison of Xwin-LMs with other LLMs on NLP fou
 | Llama-2-70B-Chat      | 63.9        | 64.6        | 52.8       | 85.9   | 66.8       |
 | **Xwin-LM-7B-V0.1**      | 49.7        | 56.2        | 48.1     | 79.5    | 58.4       |
 | **Xwin-LM-13B-V0.1**      | 56.6        | 62.4        | 45.5     | 83.0    | 61.9       |
-| **Xwin-LM-70B-V0.1**      | 69.6        | 70.5        | 60.1       | 87.1   | 71.8       |
+| **Xwin-LM-70B-V0.1**      | **69.6**        | 70.5        | **60.1**       | **87.1**   | **71.8**       |
 
 
 ## Inference
