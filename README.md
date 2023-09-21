@@ -81,7 +81,7 @@ The following table provides a comparison of Xwin-LMs with other LLMs on NLP fou
 
 ## Inference
 
-### Conversation templates
+### Conversation Template
 To obtain desired results, please strictly follow the conversation templates when utilizing our model for inference. Our model adopts the prompt format established by [Vicuna](https://github.com/lm-sys/FastChat) and is equipped to support **multi-turn** conversations.
 ```
 A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user's questions. USER: Hi! ASSISTANT: Hello.</s>USER: Who are you? ASSISTANT: I am Xwin-LM.</s>......
@@ -108,8 +108,8 @@ print(output)
 ```
 
 
-### vllm Example
-Because Xwin-LM is based on Llama2, it also offers support for rapid inference using [vllm](https://github.com/vllm-project/vllm). Please refer to [vllm](https://github.com/vllm-project/vllm) for detailed installation instructions.
+### vLLM Example
+Because Xwin-LM is based on Llama2, it also offers support for rapid inference using [vLLM](https://github.com/vllm-project/vllm). Please refer to [vLLM](https://github.com/vllm-project/vllm) for detailed installation instructions.
 ```python
 from vllm import LLM, SamplingParams
 (
@@ -148,4 +148,4 @@ Please consider citing our work if you use the data or code in this repo.
 
 ## Acknowledgements
 
-Thanks to [Llama 2](https://ai.meta.com/llama/), [FastChat](https://github.com/lm-sys/FastChat), [AlpacaFarm](https://github.com/tatsu-lab/alpaca_farm), and [vllm](https://github.com/vllm-project/vllm).
+Thanks to [Llama 2](https://ai.meta.com/llama/), [FastChat](https://github.com/lm-sys/FastChat), [AlpacaFarm](https://github.com/tatsu-lab/alpaca_farm), and [vLLM](https://github.com/vllm-project/vllm).
