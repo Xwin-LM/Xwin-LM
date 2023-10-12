@@ -20,6 +20,7 @@ Xwin-LM aims to develop and open-source alignment technologies for large languag
 
 ## News
 
+- :boom: [Oct 12, 2023] [Xwin-LM-7B-V0.2](https://huggingface.co/Xwin-LM/Xwin-LM-7B-V0.2) and [Xwin-LM-13B-V0.2](https://huggingface.co/Xwin-LM/Xwin-LM-13B-V0.2) have been released, with improved comparison data and RL training (i.e., PPO). Their winrates v.s. GPT-4 have increased significantly, reaching **59.83%** (7B model) and **70.36%** (13B model) respectively. The 70B model will be released soon.
 - :boom: [Sep, 2023] We released [Xwin-LM-70B-V0.1](https://huggingface.co/Xwin-LM/Xwin-LM-70B-V0.1), which has achieved a win-rate against Davinci-003 of **95.57%** on [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/) benchmark, ranking as **TOP-1** on AlpacaEval. **It was the FIRST model surpassing GPT-4** on [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/). Also note its winrate v.s. GPT-4 is **60.61**.
 - :mag: [Sep, 2023] RLHF plays crucial role in the strong performance of Xwin-LM-V0.1 release!
 - :boom: [Sep, 2023] We released [Xwin-LM-13B-V0.1](https://huggingface.co/Xwin-LM/Xwin-LM-13B-V0.1), which has achieved **91.76%** win-rate on [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/), ranking as **top-1** among all 13B models.
@@ -29,7 +30,9 @@ Xwin-LM aims to develop and open-source alignment technologies for large languag
 ## Model Card
 | Model        | Checkpoint | Report | License  |
 |------------|------------|-------------|------------------|
-|Xwin-LM-7B-V0.1| 🤗 <a href="https://huggingface.co/Xwin-LM/Xwin-LM-7B-V0.1" target="_blank">HF Link</a> | 📃**Coming soon (Stay tuned)** | <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 License|
+|Xwin-LM-7B-V0.2| 🤗 <a href="https://huggingface.co/Xwin-LM/Xwin-LM-7B-V0.2" target="_blank">HF Link</a> | 📃**Coming soon (Stay tuned)** | <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 License|
+|Xwin-LM-13B-V0.2| 🤗 <a href="https://huggingface.co/Xwin-LM/Xwin-LM-13B-V0.2" target="_blank">HF Link</a> |  |  <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 License|
+|Xwin-LM-7B-V0.1| 🤗 <a href="https://huggingface.co/Xwin-LM/Xwin-LM-7B-V0.1" target="_blank">HF Link</a> |  | <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 License|
 |Xwin-LM-13B-V0.1| 🤗 <a href="https://huggingface.co/Xwin-LM/Xwin-LM-13B-V0.1" target="_blank">HF Link</a> |  |  <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 License|
 |Xwin-LM-70B-V0.1| 🤗 <a href="https://huggingface.co/Xwin-LM/Xwin-LM-70B-V0.1" target="_blank">HF Link</a> |  |  <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 License|
 ## Benchmarks
@@ -43,13 +46,16 @@ The table below displays the performance of Xwin-LM on [AlpacaEval](https://tats
 |    | **v.s. Text-Davinci-003** | **v.s. ChatGPT** | **v.s. GPT4**|
 | **Xwin-LM-70B-V0.1**                   | **95.57**      | **87.50**          | **60.61**            |
 | GPT-4                          | 95.28  | 84.66     |  50.00      |
+| **Xwin-LM-13B-V0.2**          | **93.22**  | **87.14**  |  **70.36**    |
 | WizardLM-70B-V1.0           | 92.91  | 80.19     |  46.70      |
 | Llama-2-70B-Chat         | 92.66  | 81.97     |  51.19      |
 | **Xwin-LM-13B-V0.1**          | **91.76**  | **81.79**  |  **55.30**    |
 | ChatGPT                    | 89.37  | 50.00     |  16.60      |
+| **Xwin-LM-7B-V0.2**      | **89.31** | **79.60**    |  **59.83**     |
 | WizardLM-13B-V1.2         | 89.17  | 75.75     |  41.91      |
 | **Xwin-LM-7B-V0.1**      | **87.35** | **76.40**    |  **47.57**     |
 | Llama-2-13B-Chat     | 81.09  | 64.22     |  30.92      |
+
 
 ### Case study on [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/)
 
@@ -77,6 +83,8 @@ The following table provides a comparison of Xwin-LMs with other LLMs on NLP fou
 | **Xwin-LM-7B-V0.1**      | 49.7        | 56.2        | 48.1     | 79.5    | 58.4       |
 | **Xwin-LM-13B-V0.1**      | 56.6        | 62.4        | 45.5     | 83.0    | 61.9       |
 | **Xwin-LM-70B-V0.1**      | **69.6**        | 70.5        | **60.1**       | **87.1**   | **71.8**       |
+| **Xwin-LM-7B-V0.2**      | 50.0  | 56.4    |  49.5   |  78.9   |     58.7       |
+| **Xwin-LM-13B-V0.2**      | 56.6 |    61.5   |  43.8   | 82.9  |         61.2      |
 
 
 ## Inference
