@@ -6,7 +6,8 @@
 
 DS-1000 is a code generation benchmark with a thousand data science questions spanning seven Python libraries that (1) reflects diverse, realistic, and practical use cases, (2) has a reliable metric, (3) defends against memorization by perturbing questions.[[1]](https://ds1000-code-gen.github.io/)
 
-Here are the results of our models. Although it is not fully fair to compare our models using different prompt, it is sufficient to say our models show comparable ability with GPT-3.5-turbo and Code-davinci-002 to help users to gain knowledge and provide solutions to those questions about common python packages. 
+Here are the results of our models. **We only state that our models show promising ability to help users to gain knowledge  about common python packages.** Because DS1000 was designed for pretrained model (only complete sentences), and we use additional tricks to evaluate our model, and there are issues of testing GPT-3.5-turbo's ability (see 'Further information' below). So the comparison on this dataset is not fully fair.
+
 
 | Model | Size | Matplotlib | Numpy | Pandas | Pytorch | Scipy | Sklearn | Tensorflow | Overall |
 |----|----|----|----|----|----|----|----|----|----|
@@ -45,4 +46,19 @@ bash eval_ds1000.sh
 
 
 ## Further information
-The results of GPT4 and GPT-3.5-turbo is evaluate by prompting the model to : "Only continue after the following prompt: ". Because we can not hack the prompt format of openai's models. GPT-3.5-turbo failed to follow this instruction in Matplotlib and hence results in a low score. If you need those results, please kindly cite this repo.
+
+#### 1. Why hacking the prompt to evaluate?
+
+DS1000 was designed for pretrained models (or sentence completion models). Instruction finetuned models tend to return a complete code, including import, original context code, solution part, example usages and etc. There are no general rules that can extract only the solution part out of this response.  
+
+#### 2. How we evaluate GPT-4 and GPT-3.5-turbo?
+
+The results of GPT4 and GPT-3.5-turbo is evaluated by prompting the model to : "Only continue after the following prompt: ". (that is, we want the chat model to act like a pretrained model). Because we can not hack the prompt format of openai's models. 
+
+#### 3. Why GPT-3.5-turbo is so weak on this benchmark? How fair is the comparison?
+
+Manually checking the genration results, GPT-4 succeeded to follow the instruction (to only continue the prompt) for all examples, which means no unnecessary errors are introduced. We believe its results have reference significance.
+
+GPT-3.5-turbo, on the contrary, failed to do so sometimes. Thus mistakes that not relevant to coding ability are introduced. It is not fair to say GPT-3.5-turbo is worse than any other models (except GPT-4).
+
+**However, we believe that DS1000 is a benchmark that makes great engineering sense in the real world. If anyone figure out how to evaluate GPT-3.5-turbo on this benchmark well, we are very willing to hear and update our results.**

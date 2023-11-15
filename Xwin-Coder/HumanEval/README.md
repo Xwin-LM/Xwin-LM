@@ -33,7 +33,7 @@ pred_num=<samples per problem>
 num_seqs_per_iter=<generate batch size>
 ```
 There are 3 combinations we suggest:
-1. `temp=0, pred=1`: This is a fast greedy decode version to evaluate the model's performance, it should give a similar (±3%) result of pass@1.
+1. `temp=0, pred=1`: This is a fast greedy decode version to evaluate the model's performance. If you use this setting, you will get 65.85, 67.07, 73.78 for pass@1 corresponding to 7B, 13B, 34B model.
 2. `temp=0.2, pred=40`: This is the setting that we evaluate our pass@1 results in the above table.
 3. `temp=0.8, pred=200`: This is the setting to reproduce our pass@10 and pass@100 results in the above table.
 
