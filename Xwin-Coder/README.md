@@ -14,7 +14,7 @@ This folder is used to evaluate and reproduce the results of our code assistent 
 
 * To fully demonstrate our model's coding capabilities in real-world usage scenarios, we have conducted thorough evaluations on several existing mainstream coding capability leaderboards (rather than only on the currently most popular HumanEval).   
 * As shown in the radar chart, our 34B model **achieves comparable performance as GPT-3.5-turbo on benchmarks**. Note that, to ensure accurate visualization, our radar chart has not been scaled (only translated; MT-Bench score is scaled by 10x to be more comparable with other benchmarks).
-* Multiple-E-avg6 refer to the 6 languages used in CodeLLaMA paper. Results of GPT-4 and GPT-3.5-turbo are conducted by us, more details will be released later.
+* Multipl-E-avg6 refer to the 6 languages used in CodeLLaMA paper. Results of GPT-4 and GPT-3.5-turbo are conducted by us, more details will be released later.
 
 ### Training data
 
@@ -47,7 +47,7 @@ Then, run:
 ```bash
 pip install -r requirements.txt
 ```
-This will install all packages needed during generation. For [DS1000](DS1000/README.md), [Multipl-E](Multipl_E/README.md) and [MBPP](MBPP/README.md), We only generate responses using this docker, execution and evaluation will be done in another envirenment or repository. You can check README.md in the folder of each task for further details.
+This will install all packages needed during generation. For [DS1000](DS1000/README.md), Multipl-E and [MBPP](MBPP/README.md), We only generate responses using this docker, execution and evaluation will be done in another envirenment or repository. You can check README.md in the folder of each task for further details.
 
 ❗Note: the latest vllm does not support running on H100 yet, if you want to evaluate using H100, tag vllm=0.1.7 in the `requirements.txt`. 
 
