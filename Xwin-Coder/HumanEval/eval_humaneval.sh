@@ -2,7 +2,7 @@
 
 # generate and evaluate HumanEval in this script
 # set your model path that can be read by .from_pretrained() here 
-model=../../../XwinCoder-34B  #<model name or path>
+model=<model name or path>
 
 # temperature, if using greedy decode, temp=0.0
 temp=0.0
