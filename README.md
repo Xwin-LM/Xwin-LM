@@ -20,6 +20,7 @@ Xwin-LM aims to develop and open-source alignment technologies for large languag
 
 ## News
 
+- :boom: [Nov, 2023] We released  [**XwinCoder-7B**](https://huggingface.co/Xwin-LM/XwinCoder-7B), [**XwinCoder-13B**](https://huggingface.co/Xwin-LM/XwinCoder-13B), [**XwinCoder-34B**](https://huggingface.co/Xwin-LM/XwinCoder-34B). Our XwinCoder-34B reached **74.2** on HumanEval and it **achieves comparable performance as GPT-3.5-turbo on 6 benchmarks.**
 - :boom: [Oct 12, 2023] [Xwin-LM-7B-V0.2](https://huggingface.co/Xwin-LM/Xwin-LM-7B-V0.2) and [Xwin-LM-13B-V0.2](https://huggingface.co/Xwin-LM/Xwin-LM-13B-V0.2) have been released, with improved comparison data and RL training (i.e., PPO). Their winrates v.s. GPT-4 have increased significantly, reaching **59.83%** (7B model) and **70.36%** (13B model) respectively. The 70B model will be released soon.
 - :boom: [Sep, 2023] We released [Xwin-LM-70B-V0.1](https://huggingface.co/Xwin-LM/Xwin-LM-70B-V0.1), which has achieved a win-rate against Davinci-003 of **95.57%** on [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/) benchmark, ranking as **TOP-1** on AlpacaEval. **It was the FIRST model surpassing GPT-4** on [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/). Also note its winrate v.s. GPT-4 is **60.61**.
 - :mag: [Sep, 2023] RLHF plays crucial role in the strong performance of Xwin-LM-V0.1 release!
@@ -35,6 +36,9 @@ Xwin-LM aims to develop and open-source alignment technologies for large languag
 |Xwin-LM-7B-V0.1| 🤗 <a href="https://huggingface.co/Xwin-LM/Xwin-LM-7B-V0.1" target="_blank">HF Link</a> |  | <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 License|
 |Xwin-LM-13B-V0.1| 🤗 <a href="https://huggingface.co/Xwin-LM/Xwin-LM-13B-V0.1" target="_blank">HF Link</a> |  |  <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 License|
 |Xwin-LM-70B-V0.1| 🤗 <a href="https://huggingface.co/Xwin-LM/Xwin-LM-70B-V0.1" target="_blank">HF Link</a> |  |  <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 License|
+|Xwin-Coder-7B| 🤗 <a href="https://huggingface.co/Xwin-LM/XwinCoder-7B" target="_blank">HF Link</a> | [📃**Brief introduction**](./Xwin-Coder//README.md) |  <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 License|
+|Xwin-Coder-13B| 🤗 <a href="https://huggingface.co/Xwin-LM/XwinCoder-13B" target="_blank">HF Link</a> |  |  <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 License|
+|Xwin-Coder-34B| 🤗 <a href="https://huggingface.co/Xwin-LM/XwinCoder-7B" target="_blank">HF Link</a> |  |  <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 License|
 ## Benchmarks
 
 ### Xwin-LM performance on [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/).
