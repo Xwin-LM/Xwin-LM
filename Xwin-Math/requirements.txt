@@ -1,0 +1,11 @@
+fire
+tqdm
+tabulate
+pyparsing
+sympy==1.12
+antlr4-python3-runtime==4.11
+vllm==0.1.4
+ray==2.6.3
+typing-extensions==4.5.0
+tokenizers==0.13.3
+transformers==4.31.0
