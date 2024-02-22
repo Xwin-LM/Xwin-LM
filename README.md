@@ -19,7 +19,7 @@ Powerful, Stable, and Reproducible LLM Alignment
 Xwin-LM aims to develop and open-source alignment technologies for large language models, including supervised fine-tuning (SFT), reward models (RM), reject sampling, reinforcement learning from human feedback (RLHF), etc. Our first release, built-upon on the Llama2 base models, ranked **TOP-1** on [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/). Notably, it's **the first to surpass GPT-4** on this benchmark. The project will be continuously updated.
 
 ## News
-
+- :boom: [Jan, 2024] We update [XwinLM-V0.3](https://tatsu-lab.github.io/alpaca_eval/) on [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/), ranking as **top-1** among open-source models.
 - :boom: [Nov, 2023] The [Xwin-Math-70B-V1.0](https://huggingface.co/Xwin-LM/Xwin-Math-70B-V1.0) model achieves **31.8 pass@1 on the MATH benchmark** and **87.0 pass@1 on the GSM8K benchmark**. This performance places it first amongst all open-source models!
 - :boom: [Nov, 2023] The [Xwin-Math-7B-V1.0](https://huggingface.co/Xwin-LM/Xwin-Math-7B-V1.0) and [Xwin-Math-13B-V1.0](https://huggingface.co/Xwin-LM/Xwin-Math-13B-V1.0) models achieve **66.6 and 76.2 pass@1 on the GSM8K benchmark**, ranking as top-1 among all LLaMA-2 based 7B and 13B open-source models, respectively!
 - :boom: [Nov, 2023] We released  [**XwinCoder-7B**](https://huggingface.co/Xwin-LM/XwinCoder-7B), [**XwinCoder-13B**](https://huggingface.co/Xwin-LM/XwinCoder-13B), [**XwinCoder-34B**](https://huggingface.co/Xwin-LM/XwinCoder-34B). Our XwinCoder-34B reached **74.2** on HumanEval and it **achieves comparable performance as GPT-3.5-turbo on 6 benchmarks.**
