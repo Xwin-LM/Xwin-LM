@@ -35,7 +35,7 @@ Xwin-LM aims to develop and open-source alignment technologies for large languag
 ## Model Card
 | Model        | Checkpoint | Report | License  |
 |------------|------------|-------------|------------------|
-|Xwin-LM-7B-V0.2| 🤗 <a href="https://huggingface.co/Xwin-LM/Xwin-LM-7B-V0.2" target="_blank">HF Link</a> | 📃**Coming soon (Stay tuned)** | <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 License|
+|Xwin-LM-7B-V0.2| 🤗 <a href="https://huggingface.co/Xwin-LM/Xwin-LM-7B-V0.2" target="_blank">HF Link</a> | [📃**Paper Link**](https://arxiv.org/abs/2405.20335) | <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 License|
 |Xwin-LM-13B-V0.2| 🤗 <a href="https://huggingface.co/Xwin-LM/Xwin-LM-13B-V0.2" target="_blank">HF Link</a> |  |  <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 License|
 |Xwin-LM-7B-V0.1| 🤗 <a href="https://huggingface.co/Xwin-LM/Xwin-LM-7B-V0.1" target="_blank">HF Link</a> |  | <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 License|
 |Xwin-LM-13B-V0.1| 🤗 <a href="https://huggingface.co/Xwin-LM/Xwin-LM-13B-V0.1" target="_blank">HF Link</a> |  |  <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank">Llama 2 License|
